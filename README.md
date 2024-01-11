@@ -1,11 +1,15 @@
+# Introduction
 This is project that can be reimplemented as a code dojo 
 
-The idea, is to make the cadidate build a react project from scratch, e.g. using 
+![possible_result.png](possible_result.png)
 
+The idea, is to make the candidate build a react project from scratch, e.g. using 
+```
 npx create-react-app counter-app 
-
+```
 or using another fork of this repo where the actual code is removed
 
+# Possible tasks
 First task is to create a simple counter (button "increase" which show the result)
 
 other tasks can be:
@@ -25,3 +29,15 @@ other tasks can be:
 7. Styling: Use CSS or a CSS-in-JS library to style your components and improve the layout of your application.
 
 8. Testing: Write unit tests for your components using a library like React Testing Library.
+
+# Prerequisites:
+1. node js
+2. yarn or npm
+
+# Setup and run the project:
+
+```
+git clone https://github.com/PCPS/react-dojo.git
+yarn install or npm install
+yarn start or npm start
+```
