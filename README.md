@@ -25,3 +25,15 @@ other tasks can be:
 7. Styling: Use CSS or a CSS-in-JS library to style your components and improve the layout of your application.
 
 8. Testing: Write unit tests for your components using a library like React Testing Library.
+
+Prerequisites:
+1. node js
+2. yarn or npm
+
+Setup and run the project:
+
+```
+git clone https://github.com/PCPS/react-dojo.git
+yarn install or npm install
+yarn start or npm start
+```
