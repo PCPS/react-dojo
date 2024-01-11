@@ -44,7 +44,7 @@ const Counter = () =>{
             <button onClick={handleSaveCount}>Save Count</button>
             <ul>
                 {savedCounts.map((savedCount, index) => (
-                    <li key={index}>{savedCount}</li>
+                    <li key={index}>Counter {index+1}: {savedCount}</li>
                 ))}
             </ul>
         </div>
