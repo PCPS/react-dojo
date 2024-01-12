@@ -1,9 +1,9 @@
 # Coding Dojo: Counter App
-This is project that can be reimplemented as a code dojo 
+This is project that can be reimplemented as a code dojo
 
 ![possible_result.png](possible_result.png)
 
-The idea, is to make the candidate build a react project from scratch, e.g. using 
+The idea, is to make the candidate build a react project from scratch, e.g. using
 ```
 npx create-react-app counter-app 
 ```
@@ -24,9 +24,17 @@ Other tasks can be:
 
 # Prerequisites
 1. node js
-2. yarn or npm‚
+2. yarn or npm
 
-# Setup
+# Setup to starting doing the dojo
+```
+git clone https://github.com/PCPS/react-dojo.git
+git checkout skeleton
+yarn install or npm install
+yarn start or npm start
+```
+
+# Setup to see proposed solution
 ```
 git clone https://github.com/PCPS/react-dojo.git
 yarn install or npm install
