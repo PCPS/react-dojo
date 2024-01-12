@@ -33,9 +33,8 @@ function Counter() {
   }, [count, savedCounts]);
 
   return (
-    <div>
-
-      <div className=" font-bold underline"> You clicked {count} times</div>
+    <>
+      <h2> You clicked {count} times</h2>
       <div>
         <button
           type="button"
@@ -47,7 +46,6 @@ function Counter() {
           onClick={() => setCount(count - 1)}
         >Decrease
         </button>
-
         <button
           type="button"
           onClick={() => setCount(0)}
@@ -67,17 +65,17 @@ function Counter() {
         <button type="button" onClick={handleSaveCount}>Save Count</button>
       </div>
       <div>
-        <h2 className="font-semibold">Saved Counters:</h2>
+        <h2>Saved Counters:</h2>
         <ul>
           {savedCounts.map((savedCount, index) => (
-          // eslint-disable-next-line react/no-array-index-key
+            // eslint-disable-next-line react/no-array-index-key
             <li key={`Counter_${index}`}>
               Counter {index + 1}: {savedCount}
             </li>
           ))}
         </ul>
       </div>
-    </div>
+    </>
   );
 }
 
