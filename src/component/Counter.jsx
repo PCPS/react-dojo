@@ -34,22 +34,49 @@ function Counter() {
 
   return (
     <div>
-      <p> You clicked {count} times</p>
-      <button type="submit" onClick={() => setCount(count + 1)}>Increase</button>
-      <button type="submit" onClick={() => setCount(count - 1)}>Decrease</button>
-      <button type="submit" onClick={() => setCount(0)}>Reset</button>
-      <input value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
-      <button type="submit" onClick={handleSetCount}>Set Count</button>
-      {error && <p>{error}</p>}
-      <button type="submit" onClick={handleSaveCount}>Save Count</button>
-      <ul>
-        {savedCounts.map((savedCount, index) => (
+
+      <div className=" font-bold underline"> You clicked {count} times</div>
+      <div>
+        <button
+          type="button"
+          onClick={() => setCount(count + 1)}
+        >Increase
+        </button>
+        <button
+          type="button"
+          onClick={() => setCount(count - 1)}
+        >Decrease
+        </button>
+
+        <button
+          type="button"
+          onClick={() => setCount(0)}
+        >Reset
+        </button>
+      </div>
+      <div>
+
+        <input
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
+        />
+      </div>
+      <div>
+        <button type="button" onClick={handleSetCount}>Set Count</button>
+        {error && <p>{error}</p>}
+        <button type="button" onClick={handleSaveCount}>Save Count</button>
+      </div>
+      <div>
+        <h2 className="font-semibold">Saved Counters:</h2>
+        <ul>
+          {savedCounts.map((savedCount, index) => (
           // eslint-disable-next-line react/no-array-index-key
-          <li key={`Counter_${index}`}>
-            Counter {index + 1}: {savedCount}
-          </li>
-        ))}
-      </ul>
+            <li key={`Counter_${index}`}>
+              Counter {index + 1}: {savedCount}
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
