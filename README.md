@@ -24,13 +24,25 @@ Other tasks can be:
 
 # Prerequisites
 1. node js
-2. yarn or npm‚
+2. yarn or npm
 
-# Setup
+# Setup to starting doing the dojo
+```
+git clone https://github.com/PCPS/react-dojo.git
+git checkout skeleton
+yarn install or npm install
+yarn start or npm start
+```
+
+# Setup to see proposed solution
 ```
 git clone https://github.com/PCPS/react-dojo.git
 yarn install or npm install
 yarn start or npm start
 ```
+
+
+
+
 
 Happy coding! 👨‍💻
