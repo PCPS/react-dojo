@@ -3,15 +3,15 @@ This is project that can be reimplemented as a code dojo
 
 ![possible_result.png](possible_result.png)
 
-The idea, is to make the candidate build a react project from scratch, e.g. using
+The idea, is to build a react project from scratch, e.g. using
 ```
 npx create-react-app counter-app 
 ```
-or using another fork of this repo where the actual code is removed
+or using the skeleton branch in this repo.
 
 # Possible tasks
 First task is to create a simple counter (button "increase" which show the result).
-Other tasks can be:
+Other tasks are:
 
 1. **Decrease Button**: Add a button that decreases the count by 1 when clicked.
 2. **Reset Button**: Add a button that resets the count to 0 when clicked.
@@ -20,7 +20,8 @@ Other tasks can be:
 5. **Save Count**: Add a button that saves the current count to a list. Display this list on the page.
 6. **Local Storage**: Use the localStorage API to persist the count and the list of saved counts. When the user refreshes the page, the count and the list should not be lost.
 7. **Styling**: Use CSS or a CSS-in-JS library to style your components and improve the layout of your application.
-8. **Testing**: Write unit tests for your components using a library like React Testing Library.
+
+Please solve the tasks in a test-driven way (TDD).
 
 # Prerequisites
 1. node js
